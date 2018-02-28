@@ -1,5 +1,5 @@
 # BNNPT
-Bagging Nearest-Neighbor Prediction independence Test (R Package:https://github.com/liyistat/BNNPT)
+Bagging Nearest-Neighbor Prediction independence Test (R Package: https://github.com/liyistat/BNNPT)
 
 
 # Recommended BNNPT package installation  by devtools
