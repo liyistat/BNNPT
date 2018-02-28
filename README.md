@@ -2,7 +2,7 @@
 Bagging Nearest-Neighbor Prediction independence Test (R Package: https://github.com/liyistat/BNNPT)
 
 
-# Recommended BNNPT package installation  by devtools
+# Recommended BNNPT R package installation
 ```{r}
 devtools::install_github("liyistat/BNNPT");
 library(BNNPT);
