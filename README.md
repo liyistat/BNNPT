@@ -16,4 +16,5 @@ Yi Wang*, Yi Li*, Xiaoyu Liu*, Weilin Pu, Xiaofeng Wang, Jiucun Wang, Momiao Xio
 # The C++ version of BNNPT software
 Available at https://sourceforge.net/projects/bnnpt/.
 
-# Contact me: liyistat@gmail.com
+# Contact me 
+liyistat@gmail.com
