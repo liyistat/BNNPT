@@ -16,7 +16,7 @@ library(BNNPT);
 
 # You can also install package dependencies by install_github
 ```{r}
-devtools::install_github("cran/snow");
+devtools::install_github("cran/compiler");
 devtools::install_github("liyistat/BNNPT");
 library(BNNPT);
 ```
