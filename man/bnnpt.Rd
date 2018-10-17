@@ -4,7 +4,7 @@
 \alias{bnnpt}
 \title{BNNPT (Bagging Nearest-Neighbor Prediction independence Test)}
 \usage{
-bnnpt(x, y, bags, mtry, perms)
+bnnpt(x, y, bags = 256, mtry = floor(sqrt(length(x))), perms = 100)
 }
 \arguments{
 \item{x}{A vector containing values of a continuous variable (X).}
@@ -35,9 +35,9 @@ x<-rnorm(1000)
 y<-rnorm(1000)
 #Test whether X and Y are independent or not using BNNPT
 library(BNNPT)
-#Set the parameters: bags= 20, mtry = 10, perms = 100
+#Set the default parameters: bags= 20, mtry = 10, perms = 100
 t1<- Sys.time()
-bnnpt(x,y,bags=20, mtry=10, perm=100)
+bnnpt(x,y,bags = 20, mtry = 10, perms = 100)
 t2<- Sys.time()
 #Output calculation time of BNNPT
 t2-t1
@@ -50,8 +50,8 @@ y<-sin(x)
 #Test whether X and Y are independent or not using BNNPT
 library(BNNPT)
 t1<- Sys.time()
-#Set the parameters: bags= 50, mtry = 10, perms = 100
-bnnpt(x,y,bags=50, mtry=10, perm=100)
+#Set the parameters: bags= 256, mtry = floor(sqrt(length(x))), perms = 100
+bnnpt(x, y, bags = 256, mtry = floor(sqrt(length(x))), perm = 100)
 t2<- Sys.time()
 #Output calculation time of BNNPT
 t2-t1

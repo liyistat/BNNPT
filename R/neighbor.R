@@ -15,3 +15,4 @@ neighbor.structure<-function(x,bags,mtry){
 }
 neighbor.structure<-compiler::cmpfun(neighbor.structure)
 
+

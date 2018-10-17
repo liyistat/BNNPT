@@ -1,12 +1,12 @@
 Package: BNNPT
 Type: Package
 Title: Bagging Nearest-Neighbor Prediction independence Test
-Version: 1.1.2
+Version: 3.2.1
 Authors@R: person("Li", "Yi", email = "liyistat@gmail.com",
                   role = c("aut", "cre"))
 Description: Testing dependence/correlation of two variables is one of the fundamental tasks in statistics. In this work, we proposed an efficient method for nonlinear dependence of two continuous variables (X and Y). We addressed this research question by using BNNPT (Bagging Nearest-Neighbor Prediction independence Test, software available at https://sourceforge.net/projects/bnnpt/). In the BNNPT framework, we first used the value of X to construct a bagging neighborhood structure. We then obtained the out of bag estimator of Y based on the bagging neighborhood structure. The square error was calculated to measure how well Y is predicted by X. Finally, a permutation test was applied to determine the significance of the observed square error.
-Imports: compiler
+Imports: compiler, parallel
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
