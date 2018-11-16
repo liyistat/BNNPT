@@ -50,8 +50,8 @@ y<-sin(x)
 #Test whether X and Y are independent or not using BNNPT
 library(BNNPT)
 t1<- Sys.time()
-#Set the parameters: bags= 256, mtry = floor(sqrt(length(x))), perms = 100
-bnnpt(x, y, bags = 256, mtry = floor(sqrt(length(x))), perm = 100)
+#Set the parameters: bags= 50, mtry = floor(sqrt(length(x))), perms = 100
+bnnpt(x, y, bags = 50, mtry = floor(sqrt(length(x))), perm = 100)
 t2<- Sys.time()
 #Output calculation time of BNNPT
 t2-t1
